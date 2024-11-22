@@ -36,15 +36,15 @@ if st.button('Get Fare'):
     }
 
 
-## Once we have these, let's call our API in order to retrieve a prediction
-url = 'https://taxifare.lewagon.ai/predict'
-#🤔 How could we call our API ? Off course... The `requests` package 💡
-#Let's call our API using the `requests` package...
-response = requests.get(url, params=params, timeout=30)
-response.raise_for_status()
-# Let's retrieve the prediction from the **JSON** returned by the API...
-prediction = response.json
+    ## Once we have these, let's call our API in order to retrieve a prediction
+    url = 'https://taxifare.lewagon.ai/predict'
+    #🤔 How could we call our API ? Off course... The `requests` package 💡
+    #Let's call our API using the `requests` package...
+    response = requests.get(url, params=params, timeout=30)
+    response.raise_for_status()
+    # Let's retrieve the prediction from the **JSON** returned by the API...
+    prediction = response.json
 
-## Finally, we can display the prediction to the user
-st.subheader('Estimated Fare:')
-st.write(f"${prediction['fare']}")
+    ## Finally, we can display the prediction to the user
+    st.subheader('Estimated Fare:')
+    st.write(f"${prediction['fare']}")
