@@ -16,7 +16,7 @@ pickup_longitude = st.number_input('Pickup longitude')
 pickup_latitude = st.number_input('Pickup latitude')
 dropoff_longitude = st.number_input('Dropoff longitude')
 dropoff_latitude = st.number_input('Dropoff latitude')
-passenger_count = st.number_input('Enter passenger count', min_value=1, max_value = 8, value=0)
+passenger_count = st.number_input('Enter passenger count', min_value=1, max_value = 8, value=1)
 
 
 # Combine date and time to single datetime string
