@@ -47,4 +47,4 @@ prediction = response.json
 
 ## Finally, we can display the prediction to the user
 st.subheader('Estimated Fare:')
-st.write(f'${prediction['fare']})
+st.write(f"${prediction['fare']}")
